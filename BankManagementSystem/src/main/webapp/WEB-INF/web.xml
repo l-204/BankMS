@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <!-- 客户注册Servlet -->
+    <servlet>
+        <servlet-name>CustomerRegisterServlet</servlet-name>
+        <servlet-class>Servlet.CustomerRegister</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomerRegisterServlet</servlet-name>
+        <url-pattern>/CustomerRegisterServlet</url-pattern>
+    </servlet-mapping>
+    <!-- 交易员注册Servlet -->
+    <servlet>
+        <servlet-name>ManagerRegisterServlet</servlet-name>
+        <servlet-class>Servlet.ManagerRegister</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ManagerRegisterServlet</servlet-name>
+        <url-pattern>/ManagerRegisterServlet</url-pattern>
+    </servlet-mapping>
+    <!-- 客户登录Servlet -->
+    <servlet>
+        <servlet-name>CustomerLoginServlet</servlet-name>
+        <servlet-class>Servlet.CustomerLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomerLoginServlet</servlet-name>
+        <url-pattern>/CustomerLoginServlet</url-pattern>
+    </servlet-mapping>
+    <!-- 交易员登录Servlet -->
+    <servlet>
+        <servlet-name>ManagerLoginServlet</servlet-name>
+        <servlet-class>Servlet.ManagerLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ManagerLoginServlet</servlet-name>
+        <url-pattern>/ManagerLoginServlet</url-pattern>
+    </servlet-mapping>
+    <!-- 客户查询信息Servlet -->
+    <servlet>
+        <servlet-name>CustomerInformationServlet</servlet-name>
+        <servlet-class>Servlet.CustomerInformation</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomerInformationServlet</servlet-name>
+        <url-pattern>/CustomerInformationServlet</url-pattern>
+    </servlet-mapping>
+    <!-- 客户开户Servlet -->
+    <servlet>
+        <servlet-name>CustomerOpenServlet</servlet-name>
+        <servlet-class>Servlet.CustomerOpen</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomerOpenServlet</servlet-name>
+        <url-pattern>/CustomerOpenServlet</url-pattern>
+    </servlet-mapping>
+    <!-- 客户存款Servlet -->
+    <servlet>
+        <servlet-name>CustomerSaveServlet</servlet-name>
+        <servlet-class>Servlet.CustomerSave</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomerSaveServlet</servlet-name>
+        <url-pattern>/CustomerSaveServlet</url-pattern>
+    </servlet-mapping>
+    <!-- 客户取款Servlet -->
+    <servlet>
+        <servlet-name>CustomerTakeServlet</servlet-name>
+        <servlet-class>Servlet.CustomerTake</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomerTakeServlet</servlet-name>
+        <url-pattern>/CustomerTakeServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

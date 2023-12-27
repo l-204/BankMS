@@ -1,0 +1,23 @@
+新建数据库BankBDS后，在Mysql目录下的Java文件夹找到mysql-connector-java-5.1.23-bin文件，并放在Tomcat目录下的lib文件夹下
+
+然后在Tomcat 10.1.7目录下的conf文件夹中找到content.xml文件，使用记事本方式打开，在里面插入下列语句
+
+<Resource
+        name = "bankdbsConn"
+        type = "javax.sql.DataSource"
+        driverClassName = "com.mysql.jdbc.Driver"
+        url="jdbc:mysql://127.0.0.1:3306/BankDBS?
+        &amp;serverTimezone=CST&amp;characterEncoding=utf-8"
+        username = "root"
+        password = "1234"
+        maxActive = "15"
+        maxIdle = "15"
+        minIdle = "1"
+        maxWait = "1000"
+    />
+
+其中password一栏中填写的是使用者数据库的登录密码，这里是作者密码，实际使用需要注意修改
+
+（“com.mysql.jdbc.Driver”一句如果是MySQL5.8以后版本，需要在.jdbc后加.cj）
+
+包内已有mysql-connector-java-5.1.23-bin文件和配置好的content.xml文件，如果嫌麻烦可以直接覆盖到指定目录

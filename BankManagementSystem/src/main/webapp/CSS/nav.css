@@ -1,0 +1,25 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.nav{
+    list-style: none;
+    background-color: #6495ed;/*给整个列表设置蓝色背景*/
+    width: 1200px;
+    /*height: 45px;*/
+    margin: 20px auto;
+    overflow: hidden;
+    zoom: 1;
+}
+.nav a{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 0px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.nav a:hover{
+    background-color: red;
+}
